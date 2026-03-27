@@ -1,2 +1,2 @@
-# to-do-list-
-gamified, high-fidelity productivity dashboard that transforms a standard to-do list into an RPG-style leveling experience. The interface is modern and "dark-mode" by default, featuring a deep navy-to-indigo radial gradient background with "glassmorphism" card elements.
+# Web-project----To-Do-List
+A gamified task manager that turns productivity into an RPG-style experience. It features a sophisticated XP/Leveling system, dynamic league badges, and a "Rank Up" modal. The UI includes data-driven 7-day output charts and a completion-rate doughnut, demonstrating high-level mastery of UX gamification and dashboard logic.

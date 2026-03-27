@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="header">
+            <div class="level-info">
+                <div class="rank-container">
+                    <div id="league-icon-container" class="league-icon-sm"></div>
+                    <div id="league-badge" class="league-badge novice">Novice</div>
+                    <h2>Level <span id="level-display">1</span></h2>
+                </div>
+                <p id="xp-text">0 / 100 XP</p>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="xp-bar"></div>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <div class="dash-card">
+                <h4>7-Day Output</h4>
+                <div class="bar-chart" id="bar-chart"></div>
+            </div>
+            <div class="dash-card">
+                <h4>Task Status</h4>
+                <div class="doughnut-container">
+                    <div class="doughnut-chart" id="status-chart"></div>
+                    <div class="doughnut-hole"><span id="completion-rate">0%</span></div>
+                </div>
+                <div class="legend">
+                    <span class="dot pending"></span> Pending 
+                    <span class="dot done"></span> Done
+                </div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <div class="input-row main-input">
+                <input type="text" id="task-input" placeholder="What needs to be crushed?..." autocomplete="off">
+                <button id="add-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+            </div>
+            <div class="input-row options-row">
+                <select id="task-category">
+                    <option value="Work">💼 Work</option>
+                    <option value="Personal">🏠 Personal</option>
+                    <option value="Health">💪 Health</option>
+                </select>
+                <div class="datetime-group">
+                    <input type="date" id="task-date" title="Schedule Date">
+                    <input type="time" id="task-time" title="Schedule Time">
+                </div>
+            </div>
+        </div>
+
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+
+    <div id="league-up-modal" class="modal hidden">
+        <div class="modal-content">
+            <h1 class="gradient-text">RANK UP!</h1>
+            <div id="new-badge-icon" class="massive-icon-container"></div>
+            <div id="new-badge-display" class="massive-badge"></div>
+            <p>Welcome to the next tier of greatness.</p>
+            <button id="close-modal">Keep Grinding</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
